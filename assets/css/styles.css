@@ -22,9 +22,12 @@ header{
     top: 0;
     width: 100%;
 }
-
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+}
 #navbar a {
-    float: right;
     display: block;
     color: #f2f2f2;
     text-align: center;
@@ -41,10 +44,6 @@ header{
 #navbar a.active {
     background-color: #04AA6D;
     color: white;
-}
-
-ul{
-    list-style-type: none;
 }
 
 .wrapper{
