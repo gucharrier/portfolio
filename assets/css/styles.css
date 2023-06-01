@@ -118,15 +118,26 @@ header i:hover {
     top: 0;
     width: 100%;
 }
-
 #navbar {
     overflow: hidden;
     color: #f2f2f2;
-    text-align: end;
     background-color: #333;
     padding : 0 4rem;
+    box-shadow: 0 2px 4px -1px rgba(0,0,0,.4);
 }
 
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hidden{
+    visibility:hidden;
+}
+#title{
+    font-size: 2.8rem;
+    color: antiquewhite;
+}
 #navbar a {
     display: inline-block;
     color: #f2f2f2;
@@ -166,10 +177,32 @@ header i:hover {
 .contact .item{
     background-color: rgb(218, 157, 66);
 }
-form input , textarea{
+form input , textarea , button{
     display: block;
+    width : 35rem;
     margin: 1rem auto;
+    border:1px solid #ddd;
+    font-size: 12px;
+    padding: 0.8rem 0.8rem;
+    color : #999;
+    border-radius: 3px;
+    outline :none;
 }
+form input:focus , textarea:focus{
+    border:1px solid rgb(218, 157, 66);
+}
+button{
+    background-color: #333;
+    cursor: pointer;
+    
+}
+button:hover{
+    background-color: rgb(218, 157, 66);
+    color : #333;
+    transition: 0.3s;
+}
+
+
 
 /* --- FOOTER ----  */
 

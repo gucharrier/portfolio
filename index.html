@@ -28,11 +28,14 @@
         </div>
     </header>
     <section  id="navbar">
-        <nav  class="wrapper">
-            <a href="#about">A propos</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#cv">CV</a>
-            <a href="#contact">Contact</a>
+            <nav  class="wrapper">
+            <div id="title">Guillaume Charrier</div>
+            <div>
+                <a href="#about">A propos</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#cv">CV</a>
+                <a href="#contact">Contact</a>
+            </div>
         </nav>
     </section>
     <section class="about" id="about">
@@ -121,11 +124,10 @@
             <div class="item"></div>
             <h3>Contact</h3>
             <form action="">
-                <input type="text" name="name" placeholder="Votre nom">
-                <input type="text" name="lastname" placeholder="Votre prénom">
-                <input type="text" name="email" placeholder="Votre email">
-                <textarea name="" id="" placeholder="Votre message" rows="10" cols="50"></textarea>
-                <input type="submit" >
+                <input type="text" name="name" placeholder="Nom">
+                <input type="text" name="email" placeholder="Adresse e-mail">
+                <textarea name="" id="" placeholder="Votre message" rows="6" cols="50"></textarea>
+                <button type="submit">Envoyer</button>
             </form>
         </div>
     </section>
@@ -137,12 +139,15 @@
         
         var navbar = document.getElementById("navbar");
         var sticky = navbar.offsetTop;
+        var title = document.getElementById("title");
         
         function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
+            title.classList.remove("hidden")
         } else {
             navbar.classList.remove("sticky");
+            title.classList.add("hidden");
         }
         }
     </script>
