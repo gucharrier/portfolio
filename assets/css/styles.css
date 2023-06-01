@@ -131,12 +131,15 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.hidden{
-    visibility:hidden;
+.visible{
+    opacity : 0; 
+    transition:opacity 1s;
 }
-#title{
+#title {
     font-size: 2.8rem;
     color: antiquewhite;
+    transition:opacity 1s;
+    
 }
 #navbar a {
     display: inline-block;
