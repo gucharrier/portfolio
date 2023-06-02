@@ -16,10 +16,8 @@
     <header>
         <div class="wrapper flex">
             <div>
-                <h1>Guillaume</h1>        
-                <h1>Charrier</h1> 
-                <h2>// Développeur Back-end</h2>
-                <h2>Web & Web mobile</h2>
+                <h1>Guillaume Charrier</h1>        
+                <h2>// Développeur Web & Web mobile</h2>
                 <a href="https://github.com/GuillaumeO3W" target="_blank"><i class="bi bi-github"></i></a>
                 <a href="https://www.linkedin.com/in/guillaume-charrier-5a9225277/" target="_blank"><i class="bi bi-linkedin"></i></a>
             </div>
@@ -29,7 +27,7 @@
     </header>
     <section  id="navbar">
             <nav  class="wrapper">
-            <div id="title">Guillaume Charrier</div>
+            <div id="title" class="hidden">Guillaume Charrier</div>
             <div>
                 <a href="#about">A propos</a>
                 <a href="#portfolio">Portfolio</a>
@@ -144,10 +142,10 @@
         function myFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
-            title.classList.remove("visible")
+            title.classList.remove("hidden")
         } else {
             navbar.classList.remove("sticky");
-            title.classList.add("visible");
+            title.classList.add("hidden");
         }
         }
     </script>

@@ -27,12 +27,13 @@ p, h1,h2,h3,h4,h5,h6{
     overflow-wrap: break-word;
 }
 h1,h2,h3,h4,h5,h6{
-    line-height: 1;
+    line-height: 1.1;
 } 
 h1 {
     font-size: 6rem;
     text-align: start;
     font-weight : 300;
+    padding-top: 6rem;
 }
 h2{
     font-size: 2rem;
@@ -42,7 +43,7 @@ h2{
 }
 h3{
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     display: inline-block;
     font-weight: 600;
 }
@@ -67,7 +68,7 @@ html{
 }
 
 section{
-    padding: 2rem 4rem;
+    padding: 4rem 4rem 0 4rem;
     font-size: 1.2rem
 }
 
@@ -99,10 +100,11 @@ header i:hover {
 }
 .flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .parallax {
-    background-image: url("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80");
+    /* background-image: url("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80"); */
+    background-color: aliceblue;
     height: 400px; 
     width: 400px;
     background-attachment: fixed;
@@ -131,12 +133,13 @@ nav{
     align-items: center;
     justify-content: space-between;
 }
-.visible{
+.hidden{
     opacity : 0; 
     transition:opacity 1s;
 }
 #title {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
+    font-weight: 100;
     color: antiquewhite;
     transition:opacity 1s;
     
@@ -145,9 +148,9 @@ nav{
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
-    font-size: 1.5rem;
-    font-weight: 300;
+    padding: 10px 12px;
+    font-size: 1.2rem;
+    font-weight: 200;
     transition: 0.6s;
 }
 #navbar a:hover {
@@ -211,8 +214,35 @@ button:hover{
 
 
 footer{
-    padding : 4rem 4rem;
+    padding : 2rem 4rem;
     background-color: #333;
     color: #f2f2f2;
     text-align: center;
 }
+
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+@media screen and (max-width: 376px) {
+    
+    header{
+        padding : 2rem 2rem;
+    }
+    h1 {
+        font-size: 3rem;
+        padding-top: 0;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .parallax {
+        /* background-image: url("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80"); */
+        background-color: aliceblue;
+        height: 300px; 
+        width: 80%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+  }
