@@ -141,8 +141,7 @@ nav{
     font-size: 2.4rem;
     font-weight: 100;
     color: antiquewhite;
-    transition:opacity 1s;
-    
+    transition:opacity 1s; 
 }
 #navbar a {
     display: inline-block;
@@ -225,6 +224,10 @@ footer{
 
 @media screen and (max-width: 376px) {
     
+    section{
+        padding: 2rem 2rem 0 2rem;
+        font-size: 1.1rem
+    }
     header{
         padding : 2rem 2rem;
     }
@@ -232,17 +235,45 @@ footer{
         font-size: 3rem;
         padding-top: 0;
     }
+    h2 {
+        font-size: 1.2rem;
+    }
+    i{
+        margin-right: 1rem;
+        font-size: 1.2rem;
+    }
     .flex {
         flex-direction: column;
+        align-items: center;
+        gap : 2rem;
     }
     .parallax {
         /* background-image: url("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80"); */
-        background-color: aliceblue;
+        
         height: 300px; 
-        width: 80%;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        width: 90%;
     }
+    #title {
+        font-size: 1.3rem;
+        font-weight: 100;
+    }
+    #navbar {
+        padding : 0 2rem;
+
+    }
+    #navbar a {
+        overflow: hidden;
+        padding: 0.5rem 0.4rem;
+        font-size: 1.1rem;
+        font-weight: 200;
+        transition: 0.6s;
+    }
+
+
+    form input , textarea , button{
+        width : 28rem;
+        font-size: 1rem;
+        padding: 0.5rem 0.5rem;
+    }
+
   }
