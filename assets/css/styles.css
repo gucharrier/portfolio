@@ -230,17 +230,23 @@ footer{
     }
     header{
         padding : 2rem 2rem;
+        text-align: center;
     }
     h1 {
-        font-size: 3rem;
+        font-size: 3.2rem;
         padding-top: 0;
     }
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
+        font-weight: 300;
     }
     i{
+        margin-right: 0;
+    }
+    header a i{
+        
         margin-right: 1rem;
-        font-size: 1.2rem;
+        font-size: 1.6rem;
     }
     .flex {
         flex-direction: column;
