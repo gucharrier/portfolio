@@ -52,13 +52,13 @@ h3{
 }
 i{
     margin-right: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 i:hover {
     color: antiquewhite;
 }
 header i {
-    color: rgba(250, 235, 215, 0.432);
+    color: rgba(250, 235, 215, 0.6);
 }
 a{
     text-decoration: none;
@@ -78,9 +78,9 @@ html{
 
 section{
     padding: 0rem 4rem;
-    font-size: 1.4rem
+    font-size: 1.4rem;
 }
-.anchor{
+.anchor{  /*  https://pixelflips.com/blog/anchor-links-with-a-fixed-header */
     display: block;
     height: 40px; 
     margin-top: -40px;
@@ -104,22 +104,11 @@ section{
 
 header{
     padding : 8rem 4rem;
-    /* background-color: #333; */
     background: linear-gradient(#5f5252, #333);
     color: #f2f2f2;
     text-align: center;
-}
 
-/* .parallax {
-    background-image: url("https://images.unsplash.com/photo-1528892952291-009c663ce843?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=644&q=80");
-    background-color: aliceblue;
-    height: 400px; 
-    width: 400px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
+}
 
 /* --- NAVBAR ----  */
 
@@ -127,6 +116,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 #navbar {
     overflow: hidden;
@@ -171,18 +161,9 @@ content: '';
     width: 100%;
     left: 0;
 }
-/* .hoverEffect::before {
-    background-color: #f2f2f2;
-    height: 2px;
-    bottom: 0;
-    transform-origin: 100% 50%;
-    transform: scaleX(0);
-    transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-} */
+
 .hoverEffect::after {
     content: attr(data-replace);
-    /* height: 100%; */
-    /* top: 0; */
     font-size: 2.2rem;
     font-weight: 200;
     font-style: italic;
@@ -237,6 +218,41 @@ content: '';
     background-color: rgb(197, 90, 131);
 }
 
+.grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap : 2rem;
+
+}
+.card{
+    border: 1px solid rgb(228, 228, 228) ;
+    border-radius: 0.8rem;
+    padding : 0.7rem;
+    box-shadow : 2px 2px 5px rgb(228, 228, 228);
+    overflow: visible;
+}
+.card-img img {
+    object-fit: cover;
+    border-radius: 0.5rem;
+    height : 20rem;
+    width : 30rem;
+    filter: opacity(75%);
+    transition: 0.5s;
+}
+.card-img img:hover {
+    filter: opacity(100%);
+    height : 25rem;
+    width : 35rem;
+    transition: 0.5s;
+}
+.card-text {
+    padding : 1rem;
+
+    text-align: center;
+
+}
+
 /* --- CV ----  */
 
 .cv .item{
@@ -253,10 +269,10 @@ form input , textarea , button{
     width : 35rem;
     margin: 1rem auto;
     border:1px solid #ddd;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     padding: 0.8rem 0.8rem;
-    color : #999;
-    border-radius: 3px;
+    color : #ddd;
+    border-radius: 5px;
     outline :none;
 }
 form input:focus , textarea:focus{
@@ -265,7 +281,9 @@ form input:focus , textarea:focus{
 button{
     background-color: #333;
     cursor: pointer;
-    
+    font-weight: 600;
+    color : #f2f2f2;
+
 }
 button:hover{
     background-color: rgb(218, 157, 66);
@@ -291,7 +309,7 @@ footer{
     
     section{
         padding: 1rem 1rem 0 1rem;
-        font-size: 1.4rem
+        font-size: 1.4rem;
     }
     header{
         padding : 2rem 2rem 0 2rem;
