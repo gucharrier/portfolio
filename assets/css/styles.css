@@ -15,6 +15,7 @@ body{
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
     font-family: 'Poppins','Montserrat', sans-serif;
+    font-size: 1.4rem;
     color: #213442;
 }
 img,picture,video,canvas,svg {
@@ -38,7 +39,7 @@ h1 {
 h2{
     font-size: 2.2rem;
     font-weight: 300;
-    color: antiquewhite;
+    color: rgb(120, 229, 243);
     font-style: italic;
     margin: 0 2rem 0;
     display: inline-block;
@@ -50,15 +51,16 @@ h3{
     font-weight: 600;
 }
 i{
-    margin-right: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    color: rgb(120, 229, 243);
+    transition: .2s;
 }
 i:hover {
-    color: antiquewhite;
+    color: rgb(74, 142, 151);
+    transition: .2s;
 }
-header i {
-    color: rgba(250, 235, 215, 0.6);
-}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -84,12 +86,6 @@ section{
     height: 40px; 
     margin-top: -40px;
     visibility: hidden;
-}
-
-#top a{
-    position: fixed;
-    bottom: 100px;
-    right: 0px;
 }
 
 .item{
@@ -139,7 +135,7 @@ nav{
     font-family: 'Righteous', cursive;
     font-size: 2.4rem;
     letter-spacing: 0.2rem;
-    color: antiquewhite;
+    color: rgb(120, 229, 243);
     transition:opacity 1s; 
 }
 
@@ -196,7 +192,7 @@ content: '';
     transition: 0.6s;
 }
 .menu a:hover {
-    background-color: antiquewhite;
+    background-color: rgb(120, 229, 243);
     color: #111;
 }
 
@@ -207,9 +203,9 @@ content: '';
     background-color: rgb(90, 149, 197);
 }
 
-/* .portrait {
+.portrait {
     width: 100%;
-    height: 100vh;
+    height: 200px;
     background: url("../img/photo.jpg") no-repeat;
     background-size: 100% 100%;
     background-position: cover;
@@ -225,7 +221,7 @@ content: '';
     background-size: 100% 100%;
     background-position: center;
     mix-blend-mode: screen;
-} */
+}
 
 /* --- PORTFOLIO ----  */
 
@@ -249,15 +245,15 @@ content: '';
 .card-img img {
     object-fit: cover;
     border-radius: 0.5rem;
-    height : 20rem;
-    width : 30rem;
+    height : 18rem;
+    width : 32rem;
     filter: opacity(75%);
     transition: 0.8s;
 }
 .card-img img:hover {
     filter: opacity(100%);
-    height : 25rem;
-    width : 33rem;
+    height : 19.8rem;
+    width : 35.2rem;
     transition: 0.2s;
 }
 .card-text {
@@ -279,29 +275,27 @@ content: '';
 }
 form input , textarea , button{
     display: block;
-    width : 35rem;
+    width : 45rem;
     margin: 1rem auto;
     border:1px solid #ddd;
-    font-size: 1.2rem;
     padding: 0.8rem 0.8rem;
-    color : #ddd;
-    border-radius: 5px;
+    border-radius: 1rem;
     outline :none;
 }
 form input:focus , textarea:focus{
-    border:1px solid rgb(218, 157, 66);
+    border:1px solid rgb(120, 229, 243);
 }
 button{
     background-color: #333;
     cursor: pointer;
     font-weight: 600;
     color : #f2f2f2;
-
+    transition: 0.3s;
 }
 button:hover{
-    background-color: rgb(218, 157, 66);
+    background-color: rgb(120, 229, 243);
     color : #333;
-    transition: 0.4s;
+    transition: 0.3s;
 }
 
 /* --- FOOTER ----  */
@@ -368,7 +362,6 @@ footer{
     }
     form input , textarea , button{
         width : 28rem;
-        font-size: 1rem;
         padding: 0.5rem 0.5rem;
     }
     footer{
