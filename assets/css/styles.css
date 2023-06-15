@@ -136,11 +136,11 @@ nav{
 #title {
     display: flex;
     align-items: center;
+    font-family: 'Righteous', cursive;
     font-size: 2.4rem;
-    font-weight: 300;
+    letter-spacing: 0.2rem;
     color: antiquewhite;
     transition:opacity 1s; 
-    text-shadow: -2px 2px 2px rgba(0,0,0,0.50);
 }
 
 /* DEBUT EFFECT HOVER TITRE */
@@ -326,18 +326,16 @@ footer{
     }
     header{
         padding : 2rem 2rem 0 2rem;
-        text-align: center;
     }
     h1 {
-        font-size: 2.2rem;
+        font-size: 3.5rem;
         font-weight : 400;
         padding-top: 0;
         margin-bottom: 1.2rem;
     }
     h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         font-weight: 300;
-        margin-bottom: 1.2rem;
     }
     i{
         margin-right: 0;
