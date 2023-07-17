@@ -11,7 +11,7 @@ html{
     color: rgb(255, 255, 255);
 }
 body{
-    background-color: rgb(0, 29, 54);
+    background-color: rgb(0, 24, 44);
     padding: 0 10px;
 }
 
@@ -58,7 +58,6 @@ h6{
     width:200px;
     height:200px;
     border: 1px solid #ddd;
-    border-radius: 6px;
     transition: 0.4s;
 }
 .item:hover{
@@ -92,7 +91,7 @@ h6{
 }
 
 #cv, #portfolio{
-    padding-top: 400px
+    padding-top: 20%;
 }
 
 
@@ -113,5 +112,14 @@ h6{
 @keyframes cursor-blink {
     0% {
         opacity: 0;
+    }
+}
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 600px) {
+    .width{
+        width:90%;
     }
 }
