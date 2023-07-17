@@ -39,8 +39,8 @@ a:hover {
 }
 
 h3{
-    margin: 10px 0 10px 0;
-    display: inline;
+    margin: 10px 0;
+    display: inline-block;
 }
 h6{
     margin: 0 0 5px 0;
