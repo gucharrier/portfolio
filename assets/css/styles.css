@@ -65,20 +65,24 @@ h6{
 
 .width{
     width:50%;
-}
-.style{
-    padding : 10px;
-    transition: 0.5s;
+    max-width: 800px;
 }
 .formation h4, .formation h6{
     display: inline-block;
 }
-.style:hover{
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-    background-color: #636363;
-    transform: scale(1.3);
-    transition: 0.5s;
+.style p{
+    display:none;
+}
+.style{
+    padding : 10px;
+    transition: transform .5s;
+    /* transition: 0.5s ease; */
+}
 
+.style:hover{
+    background-color: #636363;
+    transform: scale(1.2);
+    /* transition: 0.5s ease; */
 }
 
 .style:hover h4{
@@ -89,6 +93,9 @@ h6{
 }
 .style:hover h6{
     color: rgb(208, 127, 255);
+}
+.style:hover p{
+    display:contents;
 }
 
 #cv, #portfolio{
