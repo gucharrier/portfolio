@@ -70,9 +70,9 @@ h6{
 .formation h4, .formation h6{
     display: inline-block;
 }
-.style p{
+/* .style p{
     display:none;
-}
+} */
 .style{
     padding : 10px;
     transition: transform .5s;
